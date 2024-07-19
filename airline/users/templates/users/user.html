@@ -1,0 +1,12 @@
+{% extends "users/master.html" %}
+{%block head %}
+  <title>users</title>
+{%endblock%}
+{%block body%}
+  <h1>Welcome {{ request.user.last_name }}</h1>
+
+  <ul>
+    <li>Username: {{request.user.username}}</li>
+    <li>Email: {{request.user.email}}</li>
+  </ul>
+{%endblock%}
