@@ -1,0 +1,59 @@
+form, h1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+input[type=submit] {
+  padding: 10px;
+  margin: 5px;
+  width: 100px;
+  border-radius: 5px;
+  border: none;
+  background-color: #417543;
+  color: white;
+  cursor: pointer;
+  font-weight: 800;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+input[type=text],
+input[type=password] {
+  padding: 10px;
+  margin: 5px;
+  width: 75%;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+.sign{
+  background-color: rgb(208, 227, 227);
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  border-width: 1px #ccc;
+}
+body{
+  background-color: rgb(166, 164, 166);
+}
+label {
+  font-weight: bold;
+}
+
+.msg{
+  display: flex;
+  align-items: center;
+  color: red;
+  align-content: center;
+  
+}
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+
