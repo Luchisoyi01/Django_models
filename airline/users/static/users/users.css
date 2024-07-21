@@ -1,0 +1,33 @@
+.header h1{
+  font-weight: 600;
+  margin: 0; 
+  color: rgb(2, 2, 45);
+}
+body{
+  margin-top: 50px;
+}
+.header{
+  display: flex;
+  align-content: center;
+  align-items: center ;
+  align-self: flex-end;
+  border: 1px black;
+  position: fixed;
+  right: 0;
+  top: 0;
+  padding: 10px;
+    
+}
+a{
+  text-decoration: none;
+  font-weight: 500;
+}
+.logout{
+  position: fixed;
+  bottom: 20px;
+  color: black;
+  cursor: pointer;
+}
+.logout:hover{
+  color: rgb(4, 4, 94);
+}
