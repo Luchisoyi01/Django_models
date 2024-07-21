@@ -1,14 +1,18 @@
 
 {% extends "users/master.html" %}
+{% load static %}
 {%block head %}
   <title>users</title>  
+  <link href="{% static "users/users.css" %}" rel= "stylesheet">
 {%endblock%}
 {%block body%}
-  <h1>Welcome {{ request.user.last_name }}</h1>
+  <div class = "header">
+    <h1>Welcome {{ request.user.last_name }}</h1>
+  </div>  
 
   <ul>
     <li>Username: {{request.user.username}}</li>
     <li>Email: {{request.user.email}}</li>
   </ul>
-  <a href="{% url 'login' %}">Log out </a>
+  <a class="logout" href="{% url 'login' %}">Log out </a>
 {%endblock%}
